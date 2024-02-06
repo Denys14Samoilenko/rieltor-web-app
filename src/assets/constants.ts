@@ -1,0 +1,9 @@
+export const BASE_URL = 'https://sidorko.programmer.lviv.ua/';
+export const RUBRICS_PARAMS = `?mod=system_info&action=get_rubrics`
+export const NEW_APARTMENTS_PARAMS = '?mod=notepad&action=view_new'
+export const MESSAGE_PARAMS = '?mod=chat&action=send_messege&messege='
+export const VIEW_CHAT_PARAMS = '?mod=chat&action=view_chat'
+export const LIKE_PARAMS = `?mod=notepad&action=add_choise&choise=1&id_obj=`
+export const DISLIKE_PARAMS = '?mod=notepad&action=add_choise&choise=0&id_obj='
+export const AGENT_PARAMS = '?mod=agent&action=get_agent_info'
+export const CHOISE_APART_PARAMS = `?mod=notepad&action=view_choise&current_page=`
