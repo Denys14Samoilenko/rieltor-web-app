@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+Sure, here's a description for the README on GitHub:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Apartment Viewer Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Apartment Viewer Project is a web application created using React, Tailwind CSS, and TypeScript. It provides users with the ability to browse available apartments, like them, and send messages to realtors for additional information.
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Apartment Viewing**: Users can browse available apartments, acquainting themselves with their descriptions, images, and basic information.
+- **Likes and Dislikes**: Users can like or dislike apartments, expressing their preferences.
+- **Message Sending**: Users can send messages to realtors if they require additional information about a specific apartment.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **React**: Used to create the user interface and manage the application's state.
+- **Tailwind CSS**: Used for quick and straightforward styling of components.
+- **TypeScript**: Used to add typing and improve code safety.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Running the Project
+
+1. Clone the repository to your local machine.
+2. Install dependencies using the command `npm install`.
+3. Run the project using the command `npm start`.
