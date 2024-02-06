@@ -8,7 +8,7 @@ const Card = ({ apartment }: { apartment: Apartment }) => {
 				style={{
 					backgroundImage: `url(${apartment.imgs[0]})`,
 				}}
-				className="text-black p-2 rounded-[6px]  min-h-[200px] w-full flex flex-col justify-between bg-center bg-no-repeat bg-cover"
+				className="text-black p-2 rounded-[6px] min-h-[200px] w-full flex flex-col justify-between bg-center bg-no-repeat bg-cover"
 			>
 				<div className="absolute">
 					{apartment.choise ? (

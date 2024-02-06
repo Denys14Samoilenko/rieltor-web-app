@@ -46,12 +46,15 @@ const ApartmentSwiper = () => {
 
 	const loadApartments = async () => {
 		setLoading(true);
+
 		try {
 			const response = await getSearchParams(NEW_APARTMENTS_PARAMS);
-			setApartments(response.data);
+			if (response.data) {
+				setApartments(response.data);
 
-			if (response.data.length > 0) {
-				setPrice(`${response.data[0].price.price_usd} $`);
+				if (response.data.length > 0) {
+					setPrice(`${response.data[0].price.price_usd} $`);
+				}
 			}
 		} catch (error) {
 			console.error('Помилка завантаження квартир:', error);
@@ -65,7 +68,7 @@ const ApartmentSwiper = () => {
 			const response = await getSearchParams(RUBRICS_PARAMS);
 			setRubrics(response);
 		} catch (error) {
-			console.error('Помилка завантаження квартир:', error);
+			console.error('Помилка завантаження рубрик:', error);
 		}
 	};
 
@@ -107,7 +110,7 @@ const ApartmentSwiper = () => {
 	return loading ? (
 		<Loader />
 	) : allCardsViewed ? (
-		<div className="all-cards-viewed-message">
+		<div className="all-cards-viewed-message text-center">
 			Ви продивились всі нові квартири
 		</div>
 	) : (

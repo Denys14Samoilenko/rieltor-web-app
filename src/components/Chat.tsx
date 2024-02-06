@@ -89,6 +89,7 @@ const Chat = () => {
 							onChange={e => setMessage(e.target.value)}
 							className="border-2 w-full border-[transparent] bg-[#bbb8b8] p-2 rounded-md outline-none focus:border-[rgba(93,99,255,0.70)] focus:bg-white"
 						/>
+
 						{!!message.length && (
 							<span
 								className="absolute right-9 top-2.5 text-xl"
@@ -101,6 +102,7 @@ const Chat = () => {
 					<button type="button">
 						<label htmlFor="image">
 							<IoImageOutline className="absolute right-2 top-2.5 text-black text-xl" />
+
 							<input
 								type="file"
 								className="hidden"
